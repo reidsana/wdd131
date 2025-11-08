@@ -1,53 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Album</title>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
-
-  
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-
-  <script defer src="scripts/temples.js"></script>
+  <link rel="stylesheet" href="styles/temples.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="brand">
-        <h2>Temple Album</h2>
-      </div>
-
-      
-      <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+  <header>
+    <nav class="navbar">
+      <h1>Temple Album</h1>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
       </button>
-
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Old</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Large</a></li>
-          <li><a href="#">Small</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="primary-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1>A Collection of Temples</h1>
-
-    <section class="gallery" aria-label="Temple gallery">
-     
+  <main>
+    <h2>Home</h2>
+    <section class="gallery">
       <figure>
+
         <img src="images/temple1.jpg" alt="Temple 1" loading="lazy">
         <figcaption>Salt Lake Temple</figcaption>
       </figure>
