@@ -1,89 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/temples.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – Oksana Reid</title>
+    <meta name="description" content="WDD 131">
+    <meta name="author" content="Oksana Reid">
+    <link rel="stylesheet" href="styles/temples.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1>Temple Album</h1>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-      <ul class="primary-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <h1>Temple Album</h1>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <ul class="primary-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Home</h2>
-    <section class="gallery">
-      <figure>
+    <main>
+        <h2>Home</h2>
+        <section class="gallery">
+            <figure>
+                <img src="images/temple1.jpg" alt="Temple 1" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Temple 2" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Temple 3" loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="Temple 4" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Temple 5" loading="lazy">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.jpg" alt="Temple 6" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.jpg" alt="Temple 7" loading="lazy">
+                <figcaption>Brigham City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="Temple 8" loading="lazy">
+                <figcaption>Cardston Alberta Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="Temple 9" loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+        </section>
+    </main>
 
-        <img src="images/temple1.jpg" alt="Temple 1" loading="lazy">
-        <figcaption>Salt Lake Temple</figcaption>
-      </figure>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Oksana Reid, Jamaica</p>
+        <p id="lastModified"></p>
+    </footer>
 
-      <figure>
-        <img src="images/temple2.jpg" alt="Temple 2" loading="lazy">
-        <figcaption>Laie Hawaii Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple3.jpg" alt="Temple 3" loading="lazy">
-        <figcaption>Paris France Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple4.jpg" alt="Temple 4" loading="lazy">
-        <figcaption>Rome Italy Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple5.jpg" alt="Temple 5" loading="lazy">
-        <figcaption>Tokyo Japan Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple6.jpg" alt="Temple 6" loading="lazy">
-        <figcaption>London England Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple7.jpg" alt="Temple 7" loading="lazy">
-        <figcaption>Brigham City Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple8.jpg" alt="Temple 8" loading="lazy">
-        <figcaption>Cardston Alberta Temple</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/temple9.jpg" alt="Temple 9" loading="lazy">
-        <figcaption>Manila Philippines Temple</figcaption>
-      </figure>
-    </section>
-  </main>
-
-   <footer class="site-footer">
-    <div class="footer-inner">
-      <p id="copyright">
-        &copy; <span id="2025"></span> Oksana Reid — All rights reserved.
-      </p>
-      <p id="lastmodified">Last modified: <span id="last-modified"></span></p>
-    </div>
-  </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+      
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    </script>
 </body>
 </html>
- 
