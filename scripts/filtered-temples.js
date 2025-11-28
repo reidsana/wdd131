@@ -1,4 +1,4 @@
-
+// Temple Data
 const temples = [
     {
         templeName: "Salt Lake Temple",
@@ -21,7 +21,6 @@ const temples = [
         area: 44175,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
     },
-    
     {
         templeName: "Calgary Alberta Temple",
         location: "Calgary, Alberta",
@@ -62,10 +61,12 @@ function createTempleCard(temple) {
     return card;
 }
 
-function displayTemples(filteredList) {
+
+
+function displayTemples(list) {
     const container = document.getElementById("templeContainer");
     container.innerHTML = "";
-    filteredList.forEach(temple => container.appendChild(createTempleCard(temple)));
+    list.forEach(temple => container.appendChild(createTempleCard(temple)));
 }
 
 
@@ -73,17 +74,21 @@ function displayTemples(filteredList) {
 function filterTemples(criteria) {
     let result = temples;
 
-    if (criteria === "old") {
-        result = temples.filter(t => Number(t.dedicated) < 1900);
-    } 
-    else if (criteria === "new") {
-        result = temples.filter(t => Number(t.dedicated) > 2000);
-    } 
-    else if (criteria === "large") {
-        result = temples.filter(t => t.area > 90000);
-    } 
-    else if (criteria === "small") {
-        result = temples.filter(t => t.area < 10000);
+    switch (criteria) {
+        case "old":
+            result = temples.filter(t => Number(t.dedicated) < 1900);
+            break;
+        case "new":
+            result = temples.filter(t => Number(t.dedicated) > 2000);
+            break;
+        case "large":
+            result = temples.filter(t => t.area > 30000);
+            break;
+        case "small":
+            result = temples.filter(t => t.area < 40000);
+            break;
+        default:
+            result = temples;
     }
 
     displayTemples(result);
@@ -92,8 +97,8 @@ function filterTemples(criteria) {
 
 
 document.querySelectorAll(".primary-nav a").forEach(link => {
-    link.addEventListener("click", (e) => {
-        e.preventDefault();
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
         filterTemples(link.dataset.filter);
     });
 });
@@ -104,9 +109,12 @@ document.getElementById("hamburger").addEventListener("click", () => {
 });
 
 
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
 
+
 displayTemples(temples);
+
 

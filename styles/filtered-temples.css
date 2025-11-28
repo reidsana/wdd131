@@ -27,6 +27,12 @@ header {
     text-decoration: none;
 }
 
+
+.primary-nav a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
