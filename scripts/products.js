@@ -6,6 +6,9 @@ const products = [
   { id: "ac-2000", name: "Warp Drive" }
 ];
 
+
+products.sort((a, b) => a.name.localeCompare(b.name));
+
 const select = document.querySelector("#productName");
 
 products.forEach(item => {
@@ -14,4 +17,3 @@ products.forEach(item => {
   option.textContent = item.name;
   select.appendChild(option);
 });
-
