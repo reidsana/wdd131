@@ -6,11 +6,12 @@ const products = [
   { id: "ac-2000", name: "Warp Drive" }
 ];
 
-const productSelect = document.querySelector("#productName");
+const select = document.querySelector("#productName");
 
-products.forEach(product => {
+products.forEach(item => {
   const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  productSelect.appendChild(option);
+  option.value = item.id;
+  option.textContent = item.name;
+  select.appendChild(option);
 });
+

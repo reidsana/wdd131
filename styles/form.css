@@ -1,9 +1,8 @@
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #ffffff;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background: white;
 }
 
 header {
@@ -32,22 +31,19 @@ form {
   gap: 1.2rem;
 }
 
-/* Labels + Inputs */
 label {
   font-weight: bold;
   display: block;
-  margin-bottom: 0.3rem;
 }
 
 input, select, textarea {
   padding: 0.6rem;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 6px;
   border: 1px solid #aaa;
   font-size: 1rem;
-  width: 100%;
 }
 
-/* Fieldsets */
 fieldset {
   border: 1px solid #c1b5c1;
   padding: 1rem;
@@ -56,7 +52,6 @@ fieldset {
 
 legend {
   font-weight: bold;
-  padding: 0 0.4rem;
 }
 
 .small {
@@ -64,31 +59,22 @@ legend {
   font-weight: normal;
 }
 
-.optional {
-  font-size: 0.8rem;
-  color: #444;
-  font-weight: normal;
+.stars input {
+  margin-right: 0.4rem;
 }
 
-/* Stars */
 .stars label {
   display: block;
   margin-bottom: 0.4rem;
-  cursor: pointer;
 }
 
-.rating-group input[type="radio"] {
-  margin-right: 0.5rem;
-}
-
-/* Submit Button */
 .submit-btn {
   background: #3b0a37;
   color: white;
-  padding: 0.75rem;
-  font-size: 1.1rem;
   border: none;
+  padding: 0.8rem;
   border-radius: 6px;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -97,9 +83,8 @@ legend {
 }
 
 
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  color: #444;
-  margin-top: 2rem;
+@media (max-width: 500px) {
+  form {
+    padding: 1rem;
+  }
 }
