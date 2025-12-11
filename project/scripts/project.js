@@ -7,7 +7,7 @@
   const SUBMISSIONS_KEY = 'ahub_submissions';
 
   const trails = [
-    { id: 't1', name: 'Ridgeway Loop', difficulty: 'moderate', length: '6.2 mi', img: 'images/trail1-small.jpg', desc: 'Scenic ridge with panoramic views.' },
+    { id: 't1', name: 'Ridgeway Loop', difficulty: 'moderate', length: '6.2 mi', img: 'images/trail-small.jpg', desc: 'Scenic ridge with panoramic views.' },
     { id: 't2', name: 'Creekside Path', difficulty: 'easy', length: '2.1 mi', img: 'images/trail2-small.jpg', desc: 'Flat, family-friendly path along a creek.' },
     { id: 't3', name: 'Summit Climb', difficulty: 'hard', length: '8.4 mi', img: 'images/trail3-small.jpg', desc: 'Steep ascent to the summit; rewarding views.' }
   ];
