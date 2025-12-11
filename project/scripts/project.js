@@ -5,14 +5,14 @@
   const SUBMISSIONS_KEY = 'ahub_submissions';
 
   const trails = [
-    { id: 't1', name: 'Ridgeway Loop', difficulty: 'moderate', length: '6.2 mi', img: 'images/trail1.jpg', desc: 'Scenic ridge with panoramic views.' },
-    { id: 't2', name: 'Creekside Path', difficulty: 'easy', length: '2.1 mi', img: 'images/trail2.jpg', desc: 'Flat, family-friendly path along a creek.' },
-    { id: 't3', name: 'Summit Climb', difficulty: 'hard', length: '8.4 mi', img: 'images/trail3.jpg', desc: 'Steep ascent to the summit; rewarding views.' }
+    { id: 't1', name: 'Ridgeway Loop', difficulty: 'moderate', length: '6.2', img: 'images/trail1.jpg', desc: 'Scenic ridge with panoramic views.' },
+    { id: 't2', name: 'Creekside Path', difficulty: 'easy', length: '2.1', img: 'images/trail2.jpg', desc: 'Flat, family-friendly path along a creek.' },
+    { id: 't3', name: 'Summit Climb', difficulty: 'hard', length: '8.4', img: 'images/trail3.jpg', desc: 'Steep ascent to the summit; rewarding views.' }
   ];
 
   const $ = sel => document.querySelector(sel);
 
-  -
+ 
   function getFavorites() {
     try { return JSON.parse(localStorage.getItem(TRAILS_KEY)) || []; } 
     catch { return []; }
@@ -29,7 +29,7 @@
     saveFavorites(favs);
   }
 
-  // --- Generate Trail Card HTML ---
+
   function trailCardHTML(trail) {
     return `
       <article class="card" data-id="${trail.id}" aria-labelledby="${trail.id}-title">
@@ -45,7 +45,6 @@
     `;
   }
 
-  // --- Render Cards ---
   function renderCards(containerSelector, items) {
     const container = $(containerSelector);
     if (!container) return;
@@ -53,7 +52,7 @@
     activateButtons(container);
   }
 
-  // --- Render Favorites ---
+
   function renderFavorites() {
     const favEl = $('#favorites');
     if (!favEl) return;
@@ -63,7 +62,7 @@
     activateButtons(favEl);
   }
 
-  // --- Activate Buttons ---
+
   function activateButtons(container) {
     container.querySelectorAll('.save').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -80,7 +79,7 @@
     });
   }
 
-  // --- Filters & Sorting ---
+ 
   function initFilters() {
     const diff = $('#difficulty'), search = $('#search'), sort = $('#sort');
     if (diff) diff.addEventListener('change', applyFilters);
@@ -106,7 +105,7 @@
     renderCards('#trails-list', results);
   }
 
-  // --- Contact Form ---
+ 
   function initContactForm() {
     const form = $('#contactForm');
     if(!form) return;
@@ -127,7 +126,7 @@
     });
   }
 
-  // --- Navigation Toggle ---
+
   function setupNavToggle() {
     const btn = $('#nav-toggle'), nav = $('#primary-nav');
     if(!btn || !nav) return;
@@ -143,6 +142,7 @@
       }
     });
   }
+
 
   document.addEventListener('DOMContentLoaded', () => {
     const year = new Date().getFullYear();
