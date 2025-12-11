@@ -47,7 +47,7 @@ main {
   margin-bottom: 1em;
 }
 
-/* Sections with white background */
+
 .review-section, .references-section {
   background: #fff;
   padding: 1em;
@@ -55,23 +55,22 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Trail cards */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin-top: 1em;
+
+.card img {
+  width: 100%;      
+  height: auto;      
+  border-radius: 10px;
+  object-fit: cover; 
 }
+
 
 .card {
-  background: #fff;
-  padding: 1em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 1 1 200px;
+  flex: 1 1 250px; 
+  max-width: 300px; 
 }
 
-/* Filters */
+
+
 .filters {
   background: #fff;
   padding: 1em;
