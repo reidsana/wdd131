@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Contact | Adventure Trails Hub</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js" defer></script>
+
+  <meta name="description" content="Get in touch with Adventure Trails Hub. Send us a message for questions, feedback, or inquiries about our trails.">
+  <meta name="author" content="Oksana Reid">
+
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
@@ -49,10 +54,24 @@
   <div id="form-result" aria-live="polite"></div>
 </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> Adventure Trails Hub | <a href="references.html">References</a></p>
-</footer>
+<script>
+ 
+  document.addEventListener('DOMContentLoaded', () => {
+    const yearEl = document.querySelectorAll('#year');
+    const currentYear = new Date().getFullYear();
+    yearEl.forEach(el => el.textContent = currentYear);
+  });
+</script>
+
 </body>
 </html>
 
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Oksana Reid. All rights reserved.</p>
+    <p><span id="year"></span> Adventure Trails Hub | <a href="references.html">References</a></p>
+</footer>
+  
+</body>
+</html>
