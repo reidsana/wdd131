@@ -1,9 +1,9 @@
-/* Background colors */
+
 .bg-green { background: #2E8B57; color: #fff; padding: 1em; border-radius: 10px; margin-bottom: 1em; }
 .bg-orange { background: #F5A623; color: #fff; padding: 1em; border-radius: 10px; margin-bottom: 1em; }
 .bg-blue { background: #3498db; color: #fff; padding: 1em; border-radius: 10px; margin-bottom: 1em; }
 
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
