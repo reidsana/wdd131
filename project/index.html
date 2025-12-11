@@ -1,0 +1,105 @@
+
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adventure Trails Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Find curated hiking and biking trails, difficulty ratings, gear tips, and local trail guides.">
+  <meta name="author" content="Oksana Reid">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a class="logo" href="index.html">Adventure Trails Hub</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="siteplan.html">Site Plan</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Find the perfect trail for your next adventure</h1>
+      <p>Curated trails, difficulty guides, and tips to help you plan your outdoor trip.</p>
+      <a class="btn" href="trails.html">Browse Trails</a>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Trails</h2>
+      <div id="featured-container" class="cards" aria-live="polite">
+       
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>Adventure Trails Hub helps people discover local trails and make safe, confident outdoor plans. This demo demonstrates responsive design, accessible HTML, and dynamic features built with JavaScript.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Adventure Trails Hub</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure Trails Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html" class="logo">Adventure Trails Hub</a>
+
+    <!-- Hamburger -->
+    <button id="nav-toggle" class="nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="trails.html">Trails</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Explore New Trails</h1>
+    <p>Discover scenic routes and hidden gems.</p>
+  </section>
+
+  <section>
+    <h2>Featured Trails</h2>
+    <div id="featured-container" class="cards"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Adventure Trails Hub | <a href="references.html">References</a></p>
+</footer>
+</body>
+</html>

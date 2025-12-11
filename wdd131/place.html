@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Jamaica</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Jamaica</h1>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <picture>
+        <source srcset="images/jamaica-large.webp" media="(min-width: 700px)">
+        <source srcset="images/jamaica-medium.webp" media="(min-width: 400px)">
+        <img src="images/jamaica-small.webp" alt="Jamaican beach with palm trees">
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <div class="weather-box">
+        <img src="images/sunny.svg" alt="Sunny icon" class="mobile-icon">
+
+        <p><strong>Temperature:</strong> <span id="temp">29</span> °C</p>
+        <p><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+      </div>
+    </section>
+
+    <section class="data">
+      <h2>About Jamaica</h2>
+      <p>
+        Jamaica is a vibrant island nation in the Caribbean Sea, known for its beautiful beaches,
+        reggae music, delicious cuisine, and warm tropical climate. From the Blue Mountains to
+        Dunn’s River Falls, Jamaica is full of culture, adventure, and incredible natural beauty.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trails | Adventure Trails Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a class="logo" href="index.html">Adventure Trails Hub</a>
+    <button id="nav-toggle" class="nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+
+  <nav id="primary-nav" class="primary-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="trails.html" class="active">Trails</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Find a Trail</h1>
+
+  <div class="filters">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="all">All</option>
+      <option value="easy">Easy</option>
+      <option value="moderate">Moderate</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <label for="search">Search:</label>
+    <input id="search" type="search" placeholder="Search trails…">
+
+    <label for="sort">Sort by:</label>
+    <select id="sort">
+      <option value="default">Recommended</option>
+      <option value="length-asc">Length: Short → Long</option>
+      <option value="length-desc">Length: Long → Short</option>
+      <option value="difficulty-az">Difficulty (A→Z)</option>
+      <option value="name-az">Name (A→Z)</option>
+      <option value="name-za">Name (Z→A)</option>
+    </select>
+  </div>
+
+  <h2>All Trails</h2>
+  <div id="trails-list" class="cards"></div>
+
+  <h2>Your Saved Trails</h2>
+  <div id="favorites" class="cards"></div>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Adventure Trails Hub | <a href="references.html">References</a></p>
+</footer>
+</body>
+</html>
+
