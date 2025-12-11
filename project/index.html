@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +10,39 @@
   <script src="scripts/project.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <h1>Adventure Trails Hub</h1>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="references.html">References</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <h1>Adventure Trails Hub</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="trail.html">Trails</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero-section bg-green">
-      <h2>Explore Trails Near You</h2>
-      <p>Find your next outdoor adventure today!</p>
-      <img src="images/trail.jpg" alt="Scenic trail in the mountains">
-    </section>
+<main>
+  <section class="hero-section bg-green">
+    <h2>Explore Trails Near You</h2>
+    <p>Find your next outdoor adventure today!</p>
+    <img src="images/trail.jpg" alt="Scenic trail in the mountains">
+  </section>
 
-    <section class="features">
-      <div class="feature-box bg-orange">
-        <h3>Search Trails</h3>
-        <p>Filter by difficulty, distance, and more.</p>
-      </div>
-      <div class="feature-box bg-blue">
-        <h3>Save Favorites</h3>
-        <p>Create a personalized trail list for future hikes.</p>
-      </div>
-    </section>
-  </main>
+  <section class="features">
+    <div class="feature-box bg-orange">
+      <h3>Search Trails</h3>
+      <p>Filter by difficulty, distance, and more.</p>
+    </div>
+    <div class="feature-box bg-blue">
+      <h3>Save Favorites</h3>
+      <p>Create a personalized trail list for future hikes.</p>
+    </div>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Oksana Reid. All rights reserved.</p>
-  </footer>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Oksana Reid. All rights reserved.</p>
+</footer>
 </body>
 </html>
